@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 SEP 2019 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 OCT 2019 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -670,20 +670,14 @@ Overfull \hbox (1.4296pt too wide) detected at line 41
 \openout6 = `project_charter.lof'.
 
  [5] (./tex/vision.tex) (./tex/mission.tex)
-(./tex/success_criteria.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 26--112
+(./tex/success_criteria.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 39--112
 
  []
 
 
-Overfull \hbox (14.16324pt too wide) in paragraph at lines 26--112
-\T1/mdbch/m/n/10.95 NOTE: The vi-sion, mis-sion, and suc-cess cri-te-ria, when 
-com-bined, should oc-cupy $[]$.
+Underfull \hbox (badness 10000) in paragraph at lines 39--112
+
  []
 
 [6] (./tex/background.tex) (./tex/related_work.tex
@@ -730,7 +724,7 @@ cal/texlive/2019/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local
 xlive/2019/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on project_charter.pdf (12 pages, 136478 bytes).
+Output written on project_charter.pdf (12 pages, 135385 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
