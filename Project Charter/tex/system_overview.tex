@@ -1,6 +1,14 @@
-Explain, at a high level, how you will implement a solution to the problem. Include a diagram of major components to the system (not a full architectural design, but a high level overview of the major system components and how a user or external system might interface). Avoid specific implementation details (operating system, programming languages, etc.). This section should occupy at least 1 full page.
+Explain, at a high level, how you will implement a solution to the problem. Include a diagram of major components
+to the system (not a full architectural design, but a high level overview of the major system components and
+how a user or external system might interface). Avoid specific implementation details (operating system, programming languages, etc.).
+This section should occupy at least 1 full page.
 
-Inverse Kinematics must be used because it decides how to drive motors controlling the arm to a certain position in a 2D or horizontal direction (X and Y direction) to make a drawing. Inverse Kinematics must be used in the 2D perspective to reduce number of moving parts in the robot. Having less motors controlling each joint reduces the complexity which goes into replicating a drawing. The end goal of the project is to rotate the various joints of the robotic arm in such a way that the end effector can be controlled. The end effector’s placement in the 2D space is makes the final drawing as the end effector holds the pen or pencil making the drawing. But in inverse kinematics this is done by getting input for orientation of the end effector and rotating the arm joins accordingly to reach the desired location to make the drawing. 
+Inverse Kinematics must be used because it decides how to drive motors controlling the arm to a certain position in a 2D or horizontal direction (X and Y direction) to make a drawing.
+Inverse Kinematics must be used in the 2D perspective to reduce number of moving parts in the robot. Having less motors
+controlling each joint reduces the complexity which goes into replicating a drawing.
+The end goal of the project is to rotate the various joints of the robotic arm in such a way that the end effector can be controlled.
+The end effector’s placement in the 2D space is makes the final drawing as the end effector holds the pen or pencil making the drawing.
+But in inverse kinematics this is done by getting input for orientation of the end effector and rotating the arm joins accordingly to reach the desired location to make the drawing. 
 Controlling a robot in a 2D space can be best done by using only having 2 degrees of freedom for the robot. 
 https://robotics.stackexchange.com/questions/299/how-can-the-inverse-kinematics-problem-be-solved
 http://billbaxter.com/courses/290/html/img1.htm
