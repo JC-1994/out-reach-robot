@@ -3,12 +3,22 @@ to the system (not a full architectural design, but a high level overview of the
 how a user or external system might interface). Avoid specific implementation details (operating system, programming languages, etc.).
 This section should occupy at least 1 full page.
 
-Inverse Kinematics must be used because it decides how to drive motors controlling the arm to a certain position in a 2D or horizontal direction (X and Y direction) to make a drawing.
-Inverse Kinematics must be used in the 2D perspective to reduce number of moving parts in the robot. Having less motors
-controlling each joint reduces the complexity which goes into replicating a drawing.
+
+Inverse Kinematics is to be used for the programming of the robotic arm’s movement as IK is used in situations where the desired end effector’s position is known, but the joint angles need to be figured out. It decides how to drive motors controlling the arm to a certain position in a 2D or horizontal direction (X and Y direction) to make a drawing using various parameters.
+The distance needed for each each movement of the arm, along with it’s velocity, acceleration, position & the number of joints & links is the possible information needed to
+process how the arm moves to the desired coordinates in the 2d space/paper. Having less motors controlling each joint reduces the complexity which goes into replicating a drawing.
 The end goal of the project is to rotate the various joints of the robotic arm in such a way that the end effector can be controlled.
 The end effector’s placement in the 2D space is makes the final drawing as the end effector holds the pen or pencil making the drawing.
-But in inverse kinematics this is done by getting input for orientation of the end effector and rotating the arm joins accordingly to reach the desired location to make the drawing. 
-Controlling a robot in a 2D space can be best done by using only having 2 degrees of freedom for the robot. 
+But in inverse kinematics this is done by getting input for orientation of the end effector and rotating the arm joins accordingly to reach the desired location to make the drawing.
+
+
+Controlling a robot in a 2D space can be best done by using only having 2 degrees of freedom for the robot. The arm’s rotational joints work using “pure rotation”, i.e.
+when a body rotates about a non-moving axis. Along with calculating the force needed for each individual movement, the length of each link is to be factored in.
+The length of the arm/link is perpendicular to the force acted upon the joints in each drawing action. The current plan is to send the drawing from tablet
+using a wired connection using USB from the tablet. An alternate method would be to use a haptic sensor for the pencil/pen used by the person making the initial
+drawing to be sent using Bluetooth signal  from the Android application on tablet to robotic arm. 
+
 https://robotics.stackexchange.com/questions/299/how-can-the-inverse-kinematics-problem-be-solved
 http://billbaxter.com/courses/290/html/img1.htm
+IR gesture sensor for recording hand movements: 
+https://www.youtube.com/watch?v=hCahI7ZRbOA
